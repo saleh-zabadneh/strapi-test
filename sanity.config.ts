@@ -15,4 +15,12 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+  cors: {
+    origin: [
+      'http://localhost:3000',
+      'https://your-nextjs-app.vercel.app',
+      'https://your-sanity-studio.vercel.app',
+    ],
+    credentials: true,
+  },
 })

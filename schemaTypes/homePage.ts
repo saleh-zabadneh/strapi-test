@@ -22,6 +22,7 @@ export default defineType({
             {type: 'aboutSection'},
             {type: 'productsSection'},
             {type: 'partnersSection'},
+            {type: 'testimonialsAndCompaniesSection'},
           ],
         }),
       ],

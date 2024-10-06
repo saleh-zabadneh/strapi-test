@@ -1,6 +1,6 @@
 import {defineType, defineField} from 'sanity'
 
-export const product = defineType({
+export default defineType({
   name: 'product',
   type: 'document',
   title: 'Product',
@@ -24,34 +24,28 @@ export const product = defineType({
       validation: (Rule) => Rule.required().error('Image is required'),
     }),
     defineField({
-      name: 'links',
-      type: 'array',
-      title: 'Links',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            defineField({
-              name: 'title',
-              type: 'string',
-              title: 'Link Title',
-              validation: (Rule) => Rule.required().error('Link title is required'),
-            }),
-            defineField({
-              name: 'url',
-              type: 'url',
-              title: 'URL',
-              validation: (Rule) => Rule.required().error('URL is required'),
-            }),
-          ],
-        },
-      ],
+      name: 'slug',
+      type: 'slug',
+      title: 'URL Path',
+      description: 'The unique part of the URL for this product (e.g., "red-t-shirt")',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+      validation: (Rule) => Rule.required().error('URL Path is required'),
     }),
     defineField({
       name: 'content',
       type: 'array',
       title: 'Content',
-      of: [{type: 'block'}],
+      of: [
+        {type: 'localeText'},
+        {type: 'imageGrid'},
+        {type: 'list'},
+        {type: 'quote'},
+        {type: 'callToAction'},
+        {type: 'video'},
+      ],
     }),
   ],
 })

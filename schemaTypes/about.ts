@@ -23,40 +23,12 @@ export default defineType({
               name: 'content',
               type: 'array',
               of: [
-                {type: 'localeText', title: 'Text'},
-                {
-                  type: 'object',
-                  name: 'imageGrid',
-                  title: 'Image Grid',
-                  fields: [
-                    {name: 'images', type: 'array', of: [{type: 'image'}]},
-                    {name: 'columns', type: 'number', title: 'Number of Columns'},
-                  ],
-                },
-                {
-                  type: 'object',
-                  name: 'list',
-                  title: 'List',
-                  fields: [{name: 'items', type: 'array', of: [{type: 'localeString'}]}],
-                },
-                {
-                  type: 'object',
-                  name: 'quote',
-                  title: 'Quote',
-                  fields: [
-                    {name: 'text', type: 'localeText'},
-                    {name: 'author', type: 'localeString'},
-                  ],
-                },
-                {
-                  type: 'object',
-                  name: 'callToAction',
-                  title: 'Call to Action',
-                  fields: [
-                    {name: 'text', type: 'localeString'},
-                    {name: 'url', type: 'url'},
-                  ],
-                },
+                {type: 'localeText'},
+                {type: 'imageGrid'},
+                {type: 'list'},
+                {type: 'quote'},
+                {type: 'callToAction'},
+                {type: 'video'},
               ],
             },
           ],

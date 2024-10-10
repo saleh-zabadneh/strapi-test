@@ -19,10 +19,11 @@ export default defineType({
           type: 'reference',
           to: [
             {type: 'heroSection'},
-            {type: 'aboutSection'},
+            {type: 'aboutSectionv2'},
             {type: 'productsSection'},
             {type: 'partnersSection'},
             {type: 'testimonialsAndCompaniesSection'},
+            {type: 'referenceProjectSection'},
           ],
         }),
       ],

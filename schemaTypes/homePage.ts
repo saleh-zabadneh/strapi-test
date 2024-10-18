@@ -24,6 +24,7 @@ export default defineType({
             {type: 'partnersSection'},
             {type: 'testimonialsAndCompaniesSection'},
             {type: 'referenceProjectSection'},
+            {type: 'referenceProjectSection2'},
           ],
         }),
       ],

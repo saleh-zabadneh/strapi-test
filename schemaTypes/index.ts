@@ -16,8 +16,11 @@ import product from './product'
 import productsSection from './productsSection'
 import quote from './quote'
 import referenceProject from './referenceProject'
+import referenceProject2 from './referenceProject2'
 import referenceProjectsSection from './referenceProjectsSection'
+import referenceProjectsSection2 from './referenceProjectsSection2'
 import seo from './seo'
+import setting from './setting'
 import socialMedia from './socialMedia'
 // import steps from './steps'
 import testimonial from './testimonial'
@@ -49,9 +52,13 @@ export const schemaTypes = [
   imageGrid,
   list,
   quote,
+
   callToAction,
   // workAbout,
   referenceProject,
+  referenceProject2,
+  referenceProjectsSection2,
   referenceProjectsSection,
+  setting,
   video,
 ]

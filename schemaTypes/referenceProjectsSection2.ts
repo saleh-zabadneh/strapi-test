@@ -3,7 +3,7 @@ import {defineType, defineField, defineArrayMember} from 'sanity'
 export default defineType({
   name: 'referenceProjectSection2',
   type: 'document',
-  title: 'Reference Project Section 2',
+  title: 'Reference Project Page ',
   fields: [
     defineField({
       name: 'id',

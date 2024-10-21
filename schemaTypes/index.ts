@@ -4,6 +4,8 @@ import callToAction from './callToAction'
 import company from './company'
 import contactPage from './contactPage'
 import {footer} from './footer'
+import gallery from './gallery'
+import hero from './hero'
 import heroSection from './heroSection'
 import homePage from './homePage'
 import imageGrid from './imageGrid'
@@ -35,6 +37,7 @@ export const schemaTypes = [
   callToAction,
   seo,
   quote,
+  hero,
   setting,
   imageGrid,
   list,
@@ -54,6 +57,7 @@ export const schemaTypes = [
   referenceProjectsSection2,
   referenceProject2,
   contactPage,
+  gallery,
   // workAbout,
   privacyPolicy,
   socialMedia,

@@ -1,6 +1,7 @@
 import about from './about'
 import aboutSection from './aboutSection'
 import callToAction from './callToAction'
+import chatbot from './chatbot'
 import company from './company'
 import contactPage from './contactPage'
 import {footer} from './footer'
@@ -12,6 +13,7 @@ import imageGrid from './imageGrid'
 import list from './list'
 import {localeString} from './localeString'
 import {localeText} from './localeText'
+import news from './news'
 import partnersSection from './partnersSection'
 import privacyPolicy from './privacyPolicy'
 import product from './product'
@@ -27,6 +29,7 @@ import socialMedia from './socialMedia'
 // import steps from './steps'
 import testimonial from './testimonial'
 import testimonialsAndCompaniesSection from './testimonialsAndCompaniesSection'
+import timeline from './timeline'
 import video from './video'
 // import whatWeeOffer from './whatWeeOffer'
 // import workAbout from './workAbout'
@@ -62,5 +65,8 @@ export const schemaTypes = [
   privacyPolicy,
   socialMedia,
   partnersSection,
+  chatbot,
+  timeline,
+  news,
   company,
 ]
